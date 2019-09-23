@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@mipmap/main_background"
+    android:backgroundTintMode="multiply">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="145dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo_inicio1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="@color/cardview_light_background"
+                android:text="Somos una plataforma que conecta a
+cocineros y comensales en un solo lugar" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_light_background"
+                android:text="Ingresar como"
+                android:textSize="18dp"
+                android:layout_marginTop="100dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btn_comensal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="goToComensalExperience"
+                    android:text="COMENSAL"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:id="@+id/btn_cocinero"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="COCINERO"
+                    android:onClick="goToChefExperience"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_light_background"
+                android:text="Actualmente nuestro servicio se encuentra
+disponible únicamente en la ciudad de
+
+Bogotá" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

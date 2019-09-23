@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqListActivity"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preguntas frecuentes"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/modalities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="modalidades"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/functioning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Funcionamiento"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/howToUpMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cómo subir un menú?"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/requests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solicitudes"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/pays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagos"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

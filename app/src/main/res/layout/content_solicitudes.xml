@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolicitudesActivity"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_solicitudes">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTADO DE SOLICITUDES"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_solicitudes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tienes solicitudes en este momento"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+
+    <ListView
+        android:id="@+id/listViewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="420dp" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/goToMenus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:onClick="goToMenus"/>
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si quieres conocer el estado del
+pedido comunícate por Whatsapp"
+        android:gravity="right"
+        android:paddingRight="30dp"/>
+
+</LinearLayout>

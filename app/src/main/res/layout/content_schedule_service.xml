@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleServiceActivity"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_schedule_service">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agendar Servicio"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+quis est magna. Vestibulum vitae volutpat nunc, nec dictum lorem.
+Interdum et malesuada fames ac ante ipsum primis in faucibus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+quis est magna. Vestibulum vitae volutpat nunc, nec dictum lorem.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus.Lo-
+rem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+
+quis est magna. Vestibulum vitae volutpat nunc, nec dictum lorem.
+Interdum et malesuada fames ac ante ipsum primis in faucibus|"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODALIDAD:"/>
+
+            <RadioGroup
+                android:id="@+id/user_radio_modality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/chef_en_casa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chef en casa"/>
+
+                <RadioButton
+                    android:id="@+id/en_casa_chef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visita la cas del chef"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etOcacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ocasión"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/etTiopComida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de comida"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/etNumeroPlatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de personas"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/etFechaHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha y hora"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentarios adicionales:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/order_additionalComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="8"
+                android:scrollbars="vertical"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indica que recursos o implementos te hacen falta para el
+cumplimiento del servicio"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Precio: entre $15.000 y $20.000"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar solicitud"
+                android:onClick="createSchedule"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

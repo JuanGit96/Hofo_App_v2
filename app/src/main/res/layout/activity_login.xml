@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/colorAccent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="145dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/login_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_goTo_registerPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta?\n      ¡Registrate!"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/option_login_diner"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="25dp"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/textGoToMenus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Quieres ver todas las opciones para ordenar?"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginBottom="25dp"/>
+
+                <Button
+                    android:id="@+id/btn_goToMenus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conoce los menús"
+                    android:onClick="goToAllMenus"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

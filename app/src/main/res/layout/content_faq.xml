@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FaqActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Preguntas frecuentes"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Atrás"
+                android:onClick="goBack"/>
+
+            <!--MODALIDADES-->
+            <LinearLayout
+                android:id="@+id/modalities"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Modalidades"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Domicilios:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="El comensal realiza el pedido, Comida en Casa recoge la comida y
+se entrega en el lugar indicado."
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Chef en casa::"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Los comensales pueden agendar una comida para alguna evento u
+ocasión especial que tengan, indicando fecha y una idea general
+del menú que tengan en mente. Comida en Casa contacta a sus
+cocineros inscritos y para que realicen el servicio y el Chef irá a la
+casa del Comensal a cocinar el menú requerido."
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Ve a la casa del Chef:"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Los comensales pueden agendar una comida para alguna evento u
+ocasión especial que tengan, indicando fecha y una idea general
+del menú que tengan en mente. Comida en Casa contacta a sus
+cocineros inscritos para que realicen el servicio y el Comensal
+visitará la casa del Chef para que este le cocine."
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+
+            <!--FUNCIONAMIENTO-->
+
+            <LinearLayout
+                android:id="@+id/functioning"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Funcionamiento"
+                    android:textSize="27sp"
+
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="El comensal realiza el pedido, Comida en Casa recoge la comida y
+se entrega en el lugar indicado."
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+
+            <!--¿Como subir menú?-->
+
+            <LinearLayout
+                android:id="@+id/howToUpMenu"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="¿Cómo subir un menú?"
+                    android:textSize="27sp"
+
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="El comensal realiza el pedido, Comida en Casa recoge la comida y
+se entrega en el lugar indicado."
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+
+            <!--SOLICITUDES-->
+
+            <LinearLayout
+                android:id="@+id/requests"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Solicitudes"
+                    android:textSize="27sp"
+
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="El comensal realiza el pedido, Comida en Casa recoge la comida y
+se entrega en el lugar indicado."
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+            <!--Pagos-->
+            <LinearLayout
+                android:id="@+id/pays"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Pagos"
+                    android:textSize="27sp"
+
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="El comensal realiza el pedido, Comida en Casa recoge la comida y
+se entrega en el lugar indicado."
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
